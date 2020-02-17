@@ -1,3 +1,226 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/*navbar specific properties*/
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4%;
+}
+/*Desktop media scaling*/
+@media (max-width: 800px) {
+    .navbar {
+        flex-flow: row-reverse wrap-reverse;
+        justify-content: center;
+    }
+    .logo {
+        margin-bottom: 3%;
+    }
+    .codeSnippet {
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    nav a {
+        width:100%;
+        padding: 3% 0;
+        border-bottom: 1px solid gray;
+    }
+    
+    .navbar {
+        flex-direction: column-reverse;
+    }
+    .middle-content {
+        flex-flow: column wrap;
+    }
+    .bottom-content {
+        flex-flow: column wrap;
+    }
+}
+nav {
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.25em;
+	width: 100%;
+	height: 100%;
+    margin: auto 0 0 0;
+}
+nav a {
+	color: gray;
+	text-decoration: none;
+	vertical-align: middle;
+}
+/*Header specific properties*/
+.tagline {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-top: 5%;
+}
+.tagline img {
+	width: 30%;
+}
+header h1 {
+	text-align: center;
+	width: 45%;
+	font-size: 4em;
+}
+button {
+	font-size: 20px;
+	padding: 1% 5%;
+}
+.services-button {
+	border-radius: 8px;
+	background-color: white;
+}
+.services-header-img {
+	width: 100%;
+	margin-top: 3%;
+	margin-bottom: 5%;
+}
+/*Middle specific properties*/
+.middle-content {
+	display: flex;
+	justify-content: space-between;
+}
+.middle-content p {
+    margin-bottom: 5%;
+}
+.middle-img {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.services-content {
+	display:flex;
+	flex-direction: column;
+}
+.row-one, .row-two, .row-three {
+	display: flex;
+	justify-content: space-between;
+}
+.content-card {
+	width: 47%;
+	border: 1px gray solid;
+	padding: 3%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	background-color: #F0F0F0;
+}
+.content-card p {
+	margin-bottom: 3%;
+}
+/*Bottom content properties*/
+.bottom-content {
+	display: flex;
+	justify-content: space-between;
+}
+.bottom-content p {
+	margin-bottom: 5%;
+}
+.column-one, .services-info-img {
+	width: 50%;
+}
+/*Footer properties*/
+#copyright {
+	text-align: center;
+	margin-top: 4%;
+	margin-bottom: 2%;
+}
+/*line break padding*/
+hr {
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+/*font properties*/
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.25em;
+}
+ul {
+	
+}
+li {
+	margin: 2% 0 0 4%;
+}
+
 
 
