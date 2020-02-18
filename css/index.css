@@ -87,7 +87,10 @@ h1, h2, h3, h4, h5 {
     }
     .codeSnippet {
         display: none;
-    }
+	}
+	.bottom-content p {
+		margin: 0 1%;
+	}
 }
 @media (max-width: 500px) {
     nav {
@@ -100,16 +103,22 @@ h1, h2, h3, h4, h5 {
         padding: 3% 0;
         border-bottom: 1px solid gray;
     }
-    
-    .navbar {
+	/* ======== This property was superfluous with the .navbar properties in my tablet @media tag, causing the logo to be stretched.
+	.navbar {
         flex-direction: column-reverse;
-    }
+    }*/
     .middle-content {
         flex-flow: column wrap;
     }
     .bottom-content {
         flex-flow: column wrap;
-    }
+	}
+	h1 {
+		text-align: justify;
+	}
+	.bottom-content p {
+		margin: 0;
+	}
 }
 nav {
 	display: flex;
@@ -136,7 +145,7 @@ nav a {
 }
 header h1 {
 	text-align: center;
-	width: 45%;
+
 	font-size: 4em;
 }
 button {
